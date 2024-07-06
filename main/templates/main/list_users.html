@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список пользователей</title>
+    <!--<link rel="stylesheet" href="{% static 'main/css/login.css' %}">-->
+</head>
+<body>
+    {% for el in user %}
+        {{ el.id }}
+        {{ el.name }}
+        {{ el.email }}
+        {{ el.password }}<br>
+    {% endfor %}
+</body>
+</html>
