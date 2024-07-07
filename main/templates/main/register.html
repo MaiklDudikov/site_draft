@@ -17,6 +17,7 @@
         <a href="{% url 'list_users' %}"><button class="btn btn-secondary">List Users</button></a>
     </div>
 
+    <!--action="profile/"-->
     <form method="post">
         {% csrf_token %}
         {{ form.name }}
@@ -27,6 +28,6 @@
         <button type="submit">Зарегистрироваться</button>
     </form>
 
-    <script src="{% static 'main/js/script2.js' %}"></script>
+    <!--<script src="{% static 'main/js/script2.js' %}"></script>-->
 </body>
 </html>
