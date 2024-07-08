@@ -9,3 +9,17 @@ urlpatterns = [
     path('register/', views.register, name='register'),
     path('video/', views.video, name='video'),
 ]
+
+# 1. Удалите существующую базу данных (если это возможно):
+# rm db.sqlite3
+
+# 2. Удалите существующие файлы миграций (кроме __init__.py):
+# find . -path "*/migrations/*.py" -not -name "__init__.py" -delete
+# find . -path "*/migrations/*.pyc"  -delete
+
+# 3. Создайте новые миграции для всех приложений:
+# python manage.py makemigrations
+# python manage.py migrate
+
+# 4. Проверка создания суперпользователя :
+# python manage.py createsuperuser
