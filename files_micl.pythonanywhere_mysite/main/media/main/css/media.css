@@ -1,0 +1,5 @@
+@media (max-width: 400px) {
+    .main_block {
+        display: inline-block;
+    }
+}
