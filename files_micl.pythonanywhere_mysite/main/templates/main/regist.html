@@ -1,0 +1,25 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Прогнозы от искусственного интеллекта{% endblock %}
+
+{% block content %}
+    <div class="regist">
+        <form action="/register" method="post">
+            <label for="username">Имя пользователя:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Электронная почта:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Зарегистрироваться</button>
+        </form>
+    </div>
+{% endblock %}
+
+<!--action="{% url 'register'%}"-->
+<!--{% csrf_token %}-->
+<!--<input type="submit">Зарегистрироваться</input>-->
+<!--{{test}}-->

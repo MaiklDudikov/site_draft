@@ -1,0 +1,49 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block title %}Про двери{% endblock %}
+
+{% block content %}
+    <header>
+        <div class="header-content">
+            <h1><select id="image-category">
+                <option value="all">Галерея изображений</option>
+                <option value="nature">Скрытые двери</option>
+                <option value="city">Облагораживание проемов</option>
+                <option value="food">Зарезка</option>
+                <option value="animals">До и после</option>
+                <option value="people">Инструмент</option>
+            </select></h1>
+        </div>
+    </header>
+    <div class="image-gallery">
+        <div class="image">
+            <img src="{% static 'main/img/image1.jpg' %}" alt="Изображение 1">
+            <p class="description">Описание изображения 1</p>
+        </div>
+        <div class="image">
+            <img src="{% static 'main/img/image2.jpg' %}" alt="Изображение 2">
+            <p class="description">Описание изображения 2</p>
+        </div>
+        <div class="image">
+            <img src="{% static 'main/img/image3.jpg' %}" alt="Изображение 3">
+            <p class="description">Описание изображения 3</p>
+        </div>
+        <div class="image">
+            <img src="{% static 'main/img/image4.jpg' %}" alt="Изображение 4">
+            <p class="description">Описание изображения 4</p>
+        </div>
+        <div class="image">
+            <img src="{% static 'main/img/image5.jpg' %}" alt="Изображение 5">
+            <p class="description">Описание изображения 5</p>
+        </div>
+        <div class="image">
+            <img src="{% static 'main/img/image6.jpg' %}" alt="Изображение 6">
+            <p class="description">Описание изображения 6</p>
+        </div>
+    </div>
+    <div class="header-icons">
+        <a href="#" class="contact-icon"><button class="btn btn-outline-info">Контакты</button></a>
+        <a href="#" class="cart-icon"><button class="btn btn-outline-dark">Корзина</button></a>
+    </div>
+{% endblock %}

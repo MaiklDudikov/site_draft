@@ -1,0 +1,237 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block title %}Прогнозы от искусственного интеллекта{% endblock %}
+
+{% block content %}
+    <div class="bets">
+        <!--25 плюс / 32 игр * 100 = 81%-->
+        <div id="winrate" class="block_bets">Примеры</div>
+        <div id="winrate" class="block_bets">Win Rate 88% / 45 из 50</div>
+        <div id="winrate" class="block_bets">Зелёное - Выигрыш<br>Серое - Ещё не сыграли<br>Красное - Проигрыш</div>
+
+        <div id="color_bets_green" class="block_bets">
+            <h5><img src="{% static 'main/img/russia.png' %}" alt="spa">Чемпионат России - 03.03.2024
+                <button class="button_coef">3.15</button></h5>
+            <div class="separator"></div>
+            <p>Балтика - Сочи 0:0 / Х<br>Точный счет кэф 6.00</p>
+        </div>
+
+        <div id="color_bets_grey" class="block_bets">
+            <h5><img src="{% static 'main/img/germany.png' %}" alt="ger">Чемпионат Германии - 24.02.2024
+                <button class="button_coef">1.75</button></h5>
+            <div class="separator"></div>
+            <p>Вердер - Дармштадт 98 / П1</p>
+        </div>
+
+        <div id="color_bets_red" class="block_bets">
+            <h5><img src="{% static 'main/img/england.png' %}" alt="eng">Чемпионат Англии - 24.02.2024
+                <button class="button_coef">1.65</button></h5>
+            <div class="separator"></div>
+            <p>Манчестер Юнайтед - Фулхэм 1:2 / П1</p>
+        </div>
+
+        <div id="color_bets_green" class="block_bets">
+            <h5><img src="{% static 'main/img/germany.png' %}" alt="ger">Чемпионат Германии - 24.02.2024
+                <button class="button_coef">1.72</button></h5>
+            <div class="separator"></div>
+            <p>Бавария - РБ Лейпциг 2:1 / П1</p>
+        </div>
+
+        <div id="color_bets_green" class="block_bets">
+            <h5><img src="{% static 'main/img/england.png' %}" alt="eng">Чемпионат Англии - 24.02.2024
+                <button class="button_coef">1.40</button></h5>
+            <div class="separator"></div>
+            <p>Арсенал - Ньюкасл Юнайтед 4:1 / П1</p>
+        </div>
+
+        <div id="color_bets_green" class="block_bets">
+            <h5><img src="{% static 'main/img/england.png' %}" alt="eng">Чемпионат Англии - 24.02.2024
+                <button class="button_coef">1.57</button></h5>
+            <div class="separator"></div>
+            <p>Астон Вилла - Ноттингем Форест 4:2 / П1</p>
+        </div>
+
+        <div id="color_bets_grey" class="block_bets">
+            <h5>Лига Чемпионов - 21.02.2024
+                <button class="button_coef">1.65</button></h5>
+            <div class="separator"></div>
+            <p>Порту - Арсенал / П2</p>
+        </div>
+
+        <div id="color_bets_green" class="block_bets">
+            <h5>Лига Чемпионов - 21.02.2024
+                <button class="button_coef">1.40</button></h5>
+            <div class="separator"></div>
+            <p>Наполи - Барселона 1:1 / Х2</p>
+        </div>
+
+        <div id="color_bets_green" class="block_bets">
+            <h5><img src="{% static 'main/img/england.png' %}" alt="eng">Чемпионат Англии - 21.02.2024
+                <button class="button_coef">1.25</button></h5>
+            <div class="separator"></div>
+            <p>Ливерпуль - Лутон Таун 4:1 / П1</p>
+        </div>
+
+        <div id="color_bets_green" class="block_bets">
+            <h5>Лига Чемпионов - 20.02.2024
+                <button class="button_coef">1.66</button></h5>
+            <div class="separator"></div>
+            <p>Интер - Атлетико 1:0 / П1</p>
+        </div>
+
+        <div id="color_bets_green" class="block_bets">
+            <h5>Лига Чемпионов - 20.02.2024
+                <button class="button_coef">1.33</button></h5>
+            <div class="separator"></div>
+            <p>ПСВ - Боруссия Д 1:1 / 1Х</p>
+        </div>
+
+        <div id="color_bets_green" class="block_bets">
+            <h5><img src="{% static 'main/img/england.png' %}" alt="eng">Чемпионат Англии - 20.02.2024
+                <button class="button_coef">1.20</button></h5>
+            <div class="separator"></div>
+            <p>Манчестер Сити - Брентфорд 1:0 / П1</p>
+        </div>
+
+        <div id="color_bets_green" class="block_bets">
+            <h5><img src="{% static 'main/img/england.png' %}" alt="eng">Чемпионат Англии - 19.02.2024
+                <button class="button_coef">2.10</button></h5>
+            <div class="separator"></div>
+            <p>Эвертон - Кристал Пэлас 1:1 / X2</p>
+        </div>
+
+        <div id="color_bets_green" class="block_bets">
+            <h5><img src="{% static 'main/img/france.png' %}" alt="fra">Чемпионат Франции - 16.02.2024
+                <button class="button_coef">1.70</button></h5>
+            <div class="separator"></div>
+            <p>Лион - Ницца 1:0 / тм 2.5</p>
+        </div>
+
+        <div id="color_bets_green" class="block_bets">
+            <h5><img src="{% static 'main/img/spain.png' %}" alt="spa">Чемпионат Испании - 16.02.2024
+                <button class="button_coef">3.55</button></h5>
+            <div class="separator"></div>
+            <p>Вильярреал - Хетафе 1:1 / Х<br>Точный счет кэф 7.00</p>
+        </div>
+
+        <div id="color_bets_red" class="block_bets">
+            <h5><img src="{% static 'main/img/germany.png' %}" alt="ger">Чемпионат Германии - 16.02.2024
+                <button class="button_coef">3.35</button></h5>
+            <div class="separator"></div>
+            <p>Кёльн - Вердер 0:1 / Х<br>Точный счет 1:1 кэф 7.00 был</p>
+        </div>
+
+        <div id="color_bets_green" class="block_bets">
+            <h5><img src="{% static 'main/img/italy.png' %}" alt="ita">Чемпионат Италии - 16.02.2024
+                <button class="button_coef">1.85</button></h5>
+            <div class="separator"></div>
+            <p>Торино - Лечче 2:0 / П1<br>Точный счет 2:1 кэф 12.00 был</p>
+        </div>
+
+        <div id="color_bets_green" class="block_bets">
+            <h5>Лига Европы - 15.02.2024
+                <button class="button_coef">1.70</button></h5>
+            <div class="separator"></div>
+            <p>Милан - Ренн 3:0 / П1</p>
+        </div>
+
+        <div id="color_bets_green" class="block_bets">
+            <h5>Лига Европы - 15.02.2024
+                <button class="button_coef">1.35</button></h5>
+            <div class="separator"></div>
+            <p>Фейеноорд - Рома 1:1 / 1Х</p>
+        </div>
+
+        <div id="color_bets_green" class="block_bets">
+            <h5><img src="{% static 'main/img/italy.png' %}" alt="ita">Чемпионат Италии - 14.02.2024
+                <button class="button_coef">1.30</button></h5>
+            <div class="separator"></div>
+            <p>Болонья - Фиорентина 2:0 / 1Х</p>
+        </div>
+
+        <div id="color_bets_green" class="block_bets">
+            <h5>Лига Чемпионов - 14.02.2024
+                <button class="button_coef">1.73</button></h5>
+            <div class="separator"></div>
+            <p>ПСЖ - Реал Сосьедад 2:0 / П1</p>
+        </div>
+
+        <div id="color_bets_red" class="block_bets">
+            <h5>Лига Чемпионов - 14.02.2024
+                <button class="button_coef">1.20</button></h5>
+            <div class="separator"></div>
+            <p>Лацио - Бавария 1:0 / X2<br>Удаление у Баварии и 0 ударов в створ из 17ти</p>
+        </div>
+
+        <div id="color_bets_green" class="block_bets">
+            <h5>Лига Чемпионов - 13.02.2024
+                <button class="button_coef">1.27</button></h5>
+            <div class="separator"></div>
+            <p>Копенгаген - Манчестер Сити 1:3 / П2</p>
+        </div>
+
+        <div id="color_bets_green" class="block_bets">
+            <h5>Лига Чемпионов - 13.02.2024
+                <button class="button_coef">1.35</button></h5>
+            <div class="separator"></div>
+            <p>РБ Лейпциг - Реал Мадрид 0:1 / X2</p>
+        </div>
+
+        <div id="color_bets_red" class="block_bets">
+            <h5><img src="{% static 'main/img/france.png' %}" alt="fra">Чемпионат Франции - 09.02.2024
+                <button class="button_coef">1.43</button></h5>
+            <div class="separator"></div>
+            <p>Марсель - Мец 1:1 / П1<br>Удаление у Марселя</p>
+        </div>
+
+        <div id="color_bets_green" class="block_bets">
+            <h5><img src="{% static 'main/img/spain.png' %}" alt="spa">Чемпионат Испании - 09.02.2024
+                <button class="button_coef">1.40</button></h5>
+            <div class="separator"></div>
+            <p>Кадис - Бетис 0:2 / Х2</p>
+        </div>
+
+        <div id="color_bets_green" class="block_bets">
+            <h5><img src="{% static 'main/img/italy.png' %}" alt="ita">Чемпионат Италии - 09.02.2024
+                <button class="button_coef">1.57</button></h5>
+            <div class="separator"></div>
+            <p>Салернитана - Эмполи 1:3 / Х2</p>
+        </div>
+
+        <div id="color_bets_green" class="block_bets">
+            <h5><img src="{% static 'main/img/germany.png' %}" alt="ger">Чемпионат Германии - 09.02.2024
+                <button class="button_coef">1.43</button></h5>
+            <div class="separator"></div>
+            <p>Боруссия Д - Фрайбург 3:0 / ИТ1 > 1.5</p>
+        </div>
+
+        <div id="color_bets_green" class="block_bets">
+            <h5><img src="{% static 'main/img/germany.png' %}" alt="ger">Чемпионат Германии - 07.02.2024
+                <button class="button_coef">1.77</button></h5>
+            <div class="separator"></div>
+            <p>Майнц - Унион Берлин 1:1/ X2</p>
+        </div>
+
+        <div id="color_bets_green" class="block_bets">
+            <h5><img src="{% static 'main/img/italy.png' %}" alt="ita">Чемпионат Италии - 05.02.2024
+                <button class="button_coef">1.52</button></h5>
+            <div class="separator"></div>
+            <p>Рома - Кальяри 4:1 / П1</p>
+        </div>
+
+        <div id="color_bets_green" class="block_bets">
+            <h5><img src="{% static 'main/img/england.png' %}" alt="eng">Чемпионат Англии - 05.02.2024
+                <button class="button_coef">1.38</button></h5>
+            <div class="separator"></div>
+            <p>Брентфорд - Манчестер Сити 1:3 / П2</p>
+        </div>
+
+        <div id="color_bets_green" class="block_bets">
+            <h5><img src="{% static 'main/img/spain.png' %}" alt="spa">Чемпионат Испании - 05.02.2024
+                <button class="button_coef">1.70</button></h5>
+            <div class="separator"></div>
+            <p>Райо Вальекано - Севилья 1:2 / Х2</p>
+        </div>
+    </div>
+{% endblock %}

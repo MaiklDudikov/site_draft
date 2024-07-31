@@ -1,0 +1,15 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Таблица пользователей{% endblock %}
+
+{% block content %}
+    <div>
+        <h1>Все пользователи прошедшие регистрацию</h1>
+        <h3>Name email password</h3><br>
+        {% for el in user %}
+            {{ el.name }}
+            {{ el.email }}
+            {{ el.password }}<br>
+        {% endfor %}
+    </div>
+{% endblock %}
