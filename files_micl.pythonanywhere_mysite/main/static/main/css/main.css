@@ -1,0 +1,409 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI';
+    font-weight: bolder;
+    background-color: #e0dada;
+}
+
+aside {
+    background: rgb(84, 26, 17);
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
+
+button {
+    margin: 10px;
+}
+
+.main_block {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    /*display: inline-block;*/
+    /*align-items: center;*/
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+
+.plan {
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(221, 221, 221);
+    color: rgb(51, 51, 51);
+    padding: 20px;
+    width: 210px;
+    float: left;
+    display: inline;
+    position: relative;
+    margin: 10px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 1s;
+    border-radius: 10px;
+    z-index: 0;
+}
+
+.plan:hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.header {
+    padding: 20px;
+    margin: -20px -20px 20px -20px;
+    border-bottom: 8px solid;
+}
+
+.plan1 .header {border-bottom-color: rgb(199, 55, 86);}
+
+.plan2 .header {border-bottom-color: rgb(215, 145, 59);}
+
+.plan3 .header {border-bottom-color: rgb(43, 102, 137);}
+
+.plan4 .header {border-bottom-color: rgb(99, 187, 52);}
+
+.price {
+    font-size: 45px;
+}
+
+.monthly {
+    font-size: 13px;
+    margin-bottom: 20px;
+    text-transform: lowercase;
+    color: rgb(153, 153, 153);
+}
+
+ul {
+    margin: 20px 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    padding: 10px 0;
+}
+
+.signup {
+    position: relative;
+    padding: 10px 20px;
+    color: rgb(255, 255, 255);
+    font: bold 14px Arial, Helvetica;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 3px;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.15);
+    opacity: 0.8;
+}
+
+.signup:hover {
+    opacity: 1;
+}
+
+.plan1 .signup {background: rgb(199, 55, 86);}
+
+.plan2 .signup {background: rgb(215, 145, 59);}
+
+.plan3 .signup {background: rgb(43, 102, 137);}
+
+.plan4 .signup {background: rgb(99, 187, 52);}
+
+@media (max-width: 630px) {
+    aside {
+        flex-wrap: wrap;
+        background: rgb(0, 0, 0);
+    }
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.header-icons a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+/* Стили для раскрывающегося списка */
+#image-category {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #333;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+}
+
+#image-category:hover {
+    border-color: #666;
+}
+
+#image-category:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+#image-category option {
+    background-color: #fff;
+    color: #333;
+}
+
+#image-category option:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+#image-category option:focus {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.image {
+    width: calc(15% - 20px);
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+    transition: all 1s;
+    /*transition: transform 1s ease-in-out;*/
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Описание изображения */
+.description {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    margin: 0;
+}
+
+/* Анимация при наведении */
+.image:hover {
+    transform: scale(2.0);
+    transition: 3s;
+    z-index: 1;
+}
+
+/* Медиа-запросы для адаптивной вёрстки */
+@media (max-width: 768px) {
+    .image {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 576px) {
+    .image {
+        width: calc(100% - 20px);
+    }
+}
+
+/* Главная - регистрация */
+.regist {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 300px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+.main_block2 {
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #fff;
+	width: 32%;
+	height: 900px;
+	border-radius: 10px;
+	padding-left: 10px;
+	float: left;
+}
+
+#films {
+	background-image: url('https://avatars.mds.yandex.net/get-kinopoisk-image/4303601/f56710bd-85c3-49b8-9260-2fa8a3d07c01/300x450');}
+
+#series {
+	background-image: url('https://avatars.mds.yandex.net/get-kinopoisk-image/4774061/83329555-5830-42ca-b250-e983073ad226/600x900');
+	margin: 0px 10px;}
+
+#studies {
+	background-image: url('https://psychologies.today/wp-content/uploads/2016/06/rabota-i-ucheba-rasstavlyaem-aktsenty-e1542138897571.jpg');}
+
+.image_series span {
+	position: absolute;
+	top: 50px;
+	left: 900px;
+	opacity: 0;
+	transition: .5s;
+}
+
+.image_series:hover span {
+	opacity: 1;
+	left: 1050px;
+}
+
+.image_film span {
+	position: absolute;
+	top: 100px;
+	left: 300px;
+	opacity: 0;
+	transition: .5s;
+}
+
+.image_film:hover span {
+	opacity: 1;
+	left: 410px;
+}
+
+.image_studies span {
+	position: absolute;
+	top: 100px;
+	left: 1550px;
+	opacity: 0;
+	transition: .5s;
+}
+
+.image_studies:hover span {
+	opacity: 1;
+	left: 1650px;
+}
+
+#link {
+	color: #fff;
+	text-decoration: none;
+	padding: 0px 10px 0px 10px;
+	font-size: 18px;
+	font-family: 'Coming Soon', cursive;}
+
+#link:hover {
+	background: #db0959;
+	border-radius: 10px;}
+
+.bets {
+    margin: 0;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ea; /* Светло-зеленая заливка */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; Заполнение всей видимой высоты экрана */
+}
+
+.block_bets {
+    width: 100%;
+    border-radius: 5px;
+    margin: 5px 0; /* Внешний отступ между блоками */
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: normal;
+}
+
+#winrate {
+    background: #9694e8;
+    font-weight: bolder;
+    margin: 0 0 5px 0;
+}
+
+#color_bets_green {
+    background-color: #8cc84b; /* Светло-зеленая заливка блока */
+}
+
+#color_bets_grey {
+    background-color: #c7c7c7; /* Светло-зеленая заливка блока */
+}
+
+#color_bets_red {
+    background-color: #d18484; /* Светло-зеленая заливка блока */
+}
+
+.separator {
+    border-top: 2px solid white; /* Горизонтальная линия */
+    margin: 10px 0; /* Внешний отступ между линией и содержимым блока */
+}
+
+.button_coef {
+    background-color: #fff; /* Цвет кнопки */
+    color: #000; /* Цвет текста на кнопке */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    float: right;
+}
+
+h5 img {
+    width: 20px;
+    margin: 5px;
+}
